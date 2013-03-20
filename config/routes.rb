@@ -1,4 +1,10 @@
 Megaupload::Application.routes.draw do
+  resources :up_files
+
+
+  resources :events
+
+
   resources :users
 
 	root :to => 'home#index'

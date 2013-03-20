@@ -4154,3 +4154,151 @@ Served asset /scaffolds.css - 304 Not Modified (0ms)
 
 Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-20 13:10:57 -0400
 Served asset /users.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-20 14:50:29 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from c:in `find_template':)
+  Rendered home/index.html.erb within layouts/application (25.0ms)
+Compiled bootstrap-responsive.css  (0ms)  (pid 7812)
+Compiled bootstrap-responsive.min.css  (0ms)  (pid 7812)
+Compiled bootstrap.min.css  (1ms)  (pid 7812)
+Compiled home.css  (32ms)  (pid 7812)
+Compiled scaffolds.css  (6ms)  (pid 7812)
+Compiled users.css  (1ms)  (pid 7812)
+Compiled application.css  (7ms)  (pid 7812)
+Completed 200 OK in 312ms (Views: 312.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:31 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 150ms (Views: 14.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:41 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/?Email=timartin%40uc.cl&password=[FILTERED]" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Processing by HomeController#index as HTML
+  Parameters: {"Email"=>"timartin@uc.cl", "password"=>"[FILTERED]"}
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from c:in `find_template':)
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-20 14:50:53 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "end_date" datetime, "file_type" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130320192456')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Migrating to CreateUpFiles (20130320192650)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "up_files" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Url" varchar(255), "mail" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130320192650')[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m

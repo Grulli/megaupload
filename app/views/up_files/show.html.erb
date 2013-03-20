@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @up_file.Url %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%= @up_file.mail %>
+</p>
+
+
+<%= link_to 'Edit', edit_up_file_path(@up_file) %> |
+<%= link_to 'Back', up_files_path %>
