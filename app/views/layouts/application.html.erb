@@ -7,20 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <%= stylesheet_link_tag "application", :media => "all" %>
-	<%= csrf_meta_tags %>
+	  <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
-        <div class="container">
-          Logo
-        </div>
-      </nav>
-    </header>
-    <div id="main" role="main">
+    <div class="wrapper">
+    <!-- 1 nav bar goes here -->
+    <div id="header">Header<hr></div>
+    <div class="content" id="main" role="main">
               <%= yield %>
+              <div class="push"></div>
     </div> <!--! end of #main -->
-	          <footer></footer>
+	  <div id="footer"><hr>Footer
+    </div>
+</div>
   </body>
 </html>

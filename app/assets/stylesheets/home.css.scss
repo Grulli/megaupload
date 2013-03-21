@@ -22,15 +22,53 @@
         text-align: center;
 }
 
- .login-separator hr{
-        width: 20%;
-        margin-left: 400px;
-        float: left;
+
+ .login-or{
+ text-align:center;
+ }
+ .login-separator{
+    margin-left: 34%;
  }
  .login-separator p {
  float: left;
+ text-align: center;
  }
+ .login-separator hr{
+        height: 2px;
+        width: 20%;
+        margin-left: 400px;
+        float: left;
+        margin: 6px 20px 0px 20px; 
+    background:#0083ef;
+    
+ }
+ .regular-login{
+ margin: 100px 150px 0px 700px; 
+       
+ }
+.regular-login label
+{
+width: 5em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
 
- .regular-login form{
-        text-align: center;
- }
+.regular input
+{
+margin-left: 4.5em;
+width: 206px
+}
+
+.login-button{
+  margin-left: 100px; 
+  float:left;
+}
+.sign-up-button{
+  margin-left: 30px;
+  float:left;
+}
+.separator{
+  
+}

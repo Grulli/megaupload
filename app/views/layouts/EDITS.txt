@@ -1,1 +1,9 @@
+    <header class="navbar navbar-fixed-top">
+      <nav class="navbar-inner">
+        <div class="container">
+          Logo
+        </div>
+      </nav>
+    </header>
+
 Removed -     <%= javascript_include_tag "application" %>
