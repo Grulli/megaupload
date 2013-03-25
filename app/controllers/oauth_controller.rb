@@ -38,7 +38,7 @@ class OauthController < ApplicationController
 	def facebook_login
 	
 		if params[:code]
-			@contents = open("https://graph.facebook.com/oauth/access_token?client_id=388053801243372&redirect_uri=http://hipstergram.herokuapp.com/facebook_login&client_secret=27a1f0a7d0973dbd00fe93f457327b3d&code=#{params[:code]}").read
+			@contents = open("https://graph.facebook.com/oauth/access_token?client_id=447261195351468&redirect_uri=http://desaweb1.ing.puc.cl/facebook_login&client_secret=0beaff15109c00b110fa3cf6663b9d5c&code=#{params[:code]}").read
 			@access_token = @contents[@contents.index('=')+1..@contents.index('&')-1]
 		
 			@resp = open("https://graph.facebook.com/me?access_token=#{@access_token}").read
