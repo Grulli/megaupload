@@ -10,6 +10,10 @@ Megaupload::Application.routes.draw do
 	root :to => 'home#index', :as => :home
 	
 	match 'logout' => 'home#logout', :as => :logout
+	
+	match 'facebook' => 'oauth#new_facebook'
+
+	match 'facebook_login' => 'oauth#facebook_login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

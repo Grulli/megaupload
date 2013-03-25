@@ -38,3 +38,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'bootstrap-sass'
+
+gem 'oauth2', '~> 0.4.1'
