@@ -47,7 +47,7 @@ class UsersController < ApplicationController
         flash[:error] = "Welcome to megaupload"
 		session[:user_id] = @user.id
 		
-		format.html { redirect_to root_path }
+		format.html { redirect_to home_path }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }

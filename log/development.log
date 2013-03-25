@@ -37406,3 +37406,21 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-25 13:13:22 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
