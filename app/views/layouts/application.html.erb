@@ -14,12 +14,18 @@
     <div class="wrapper">
     <!-- 1 nav bar goes here -->
     <div id="header">
-	<% if session[:user_id] %>
+		<% if session[:user_id] %>
 			<%= form_for(User.new, :url => '/logout') do |f| %>
 				<p class="submit"><%= f.submit "Logout" , :name => "commit", :class => "btn login-button" %></p>
 			<% end %>
+		<% else %>
+			<%= form_for(User.new, :url => root_path) do |f| %>
+				<p class="submit"><%= f.submit "Sign In" , :name => "commit", :class => "btn login-button" %></p>
+				<div class="separator"></div>
+				<p class="submit"><%= f.submit "Sign Up" , :name => "commit", :class => "btn login-button" %></p>
+			<% end %>
 		<% end %>
-	Header<hr>
+		Header<hr>
 	</div>
     <div class="content" id="main" role="main">
               <%= yield %>

@@ -2,12 +2,16 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+	if session[:user_id]
+		@events = Event.find_all_by_user_id(session[:user_id])
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @events }
-    end
+		respond_to do |format|
+			format.html # index.html.erb
+			format.json { render json: @events }
+		end
+	else
+		redirect_to root_path
+	end
   end
 
   # GET /events/1

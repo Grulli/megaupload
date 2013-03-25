@@ -7,7 +7,7 @@ Megaupload::Application.routes.draw do
 
   resources :users
 
-	root :to => 'home#index'
+	root :to => 'home#index', :as => :home
 	
 	match 'logout' => 'home#logout', :as => :logout
 

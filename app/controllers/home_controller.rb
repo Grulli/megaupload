@@ -13,7 +13,7 @@ class HomeController < ApplicationController
 				flash.now[:error] = "Wrong username or password"
 			end
 		else 
-			if params[:commit] == "Sign-Up"
+			if params[:commit] == "Sign Up"
 				redirect_to "/users/new"
 			else
 				render "index.html.erb"
