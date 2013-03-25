@@ -13,7 +13,14 @@
   <body>
     <div class="wrapper">
     <!-- 1 nav bar goes here -->
-    <div id="header">Header<hr></div>
+    <div id="header">
+	<% if session[:user_id] %>
+			<%= form_for(User.new, :url => '/logout') do |f| %>
+				<p class="submit"><%= f.submit "Logout" , :name => "commit", :class => "btn login-button" %></p>
+			<% end %>
+		<% end %>
+	Header<hr>
+	</div>
     <div class="content" id="main" role="main">
               <%= yield %>
               <div class="push"></div>
@@ -21,5 +28,6 @@
 	  <div id="footer"><hr>Footer
     </div>
 </div>
+<%= javascript_include_tag "application" %>
   </body>
 </html>

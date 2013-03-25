@@ -1,13 +1,24 @@
-<div class="facebook-login">
+<center>
+<% if flash[:error] %>
+		<p id="warning"><%= flash[:error] %></p>
+<% end %>
+</center>
+<% if !session[:user_id] %>
+	<div class="facebook-login">
         <a class="btn-large btn btn-custom" href="#">f |	Login with Facebook</a>
-</div>
-      <div class="login-separator">
+	</div>
+    <div class="login-separator">
       	 <hr><div class="login-or"><p>OR</p></div><hr>
     </div>
-      <div class="regular-login">
-<form action="#">
-<p><label for="mail">Email</label> <input type="text" name="mail" id="mail" /></p>
-<p><label for="password">Password</label> <input type="password" name="password" id="password" /></p>
-<p class="submit"><input type="submit" value="Login" class="btn login-button" /></p><div class="separator"></div><p class="sign-up"><input type="submit" value="Sign Up" class="btn sing-up-button" /></p>
-</form>
-      </div>
+	<div class="regular-login">
+		<%= form_for(User.new, :url => '/') do |f| %>
+			<p><label for="mail">Email</label> <input type="text" name="mail" id="mail" /></p>
+			<p><label for="password">Password</label> <input type="password" name="password" id="password" /></p>
+			<p class="submit"><%= f.submit "Login" , :name => "commit", :class => "btn login-button" %></p>
+			<div class="separator"></div>
+			<p class="sign-up"><%= f.submit "Sign-Up" , :name => "commit", :class => "btn sing-up-button" %></p>
+		<% end %>
+	</div>
+<% else %>
+	
+<% end %>
