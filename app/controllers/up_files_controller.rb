@@ -2,23 +2,30 @@ class UpFilesController < ApplicationController
   # GET /up_files
   # GET /up_files.json
   def index
-    @up_files = UpFile.all
+	if session[:user_id]
+		@up_files = UpFile.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @up_files }
-    end
+		respond_to do |format|
+			format.html # index.html.erb
+			format.json { render json: @up_files }
+		end
+	else
+		redirect_to home_path
+	end
   end
 
   # GET /up_files/1
   # GET /up_files/1.json
   def show
     @up_file = UpFile.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @up_file }
-    end
+	if @up_file.event.user.id == session[:user_id]
+		respond_to do |format|
+			format.html # show.html.erb
+			format.json { render json: @up_file }
+		end
+	else
+		redirect_to home_path
+	end
   end
 
   # GET /up_files/new

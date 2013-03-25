@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :end_date %><br />
-    <%= f.datetime_select :end_date %>
+    <%= f.datetime_select :end_date, :start_year =>  Time.now.year %>
   </div>
   <div class="field">
     <%= f.label :file_type %><br />

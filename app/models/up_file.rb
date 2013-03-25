@@ -6,11 +6,15 @@ class UpFile < ActiveRecord::Base
 	def gen_token
 		token = ""
 		mail.chars.to_a.each do |c|
-			val = c.ord - 96
+			val = c.ord #- 96
 			if val < 10
-				token = token + "0" + val.to_s
+				token = token + "00" + val.to_s
 			else
-				token = token + val.to_s
+				if val < 100
+					token = token + "0" + val.to_s
+				else
+					token = token + val.to_s
+				end
 			end
 		end
 		token = token + event_id.to_s
