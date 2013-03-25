@@ -1,14 +1,16 @@
+require "base64"
+
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-	redirect_to home_path
-    #@users = User.all
+	#redirect_to home_path
+    @users = User.all
 
-    #respond_to do |format|
-    #  format.html # index.html.erb
-    #  format.json { render json: @users }
-    #end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @users }
+    end
   end
 
   # GET /users/1
@@ -47,9 +49,12 @@ class UsersController < ApplicationController
   def create
 	if !session[:user_id]
 		@user = User.new(params[:user])
+		@user.password = Base64.encode64(@user.password)
+		@user.password_confirmation = Base64.encode64(@user.password_confirmation)
 
 		respond_to do |format|
 			if @user.save
+				
 				flash[:error] = "Welcome to megaupload"
 				session[:user_id] = @user.id
 		
@@ -84,11 +89,11 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-	if @user.id == session[:user_id]
+	#if @user.id == session[:user_id]
 		@user = User.find(params[:id])
 		@user.destroy
 		reset_session
-	end
+	#end
 	redirect_to home_path
     #respond_to do |format|
     #  format.html { redirect_to users_url }
