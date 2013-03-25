@@ -44316,3 +44316,96 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-25 17:56:19 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-25 18:11:23 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from C:in `find_template':)
+  Rendered home/index.html.erb within layouts/application (391.0ms)
+Compiled jquery.js  (3ms)  (pid 5416)
+Compiled jquery_ujs.js  (1ms)  (pid 5416)
+Compiled bootstrap.js  (1ms)  (pid 5416)
+Compiled bootstrap.min.js  (0ms)  (pid 5416)
+Compiled events.js  (1204ms)  (pid 5416)
+Compiled home.js  (355ms)  (pid 5416)
+Compiled up_files.js  (353ms)  (pid 5416)
+Compiled users.js  (315ms)  (pid 5416)
+Compiled application.js  (2666ms)  (pid 5416)
+Completed 200 OK in 3559ms (Views: 3529.2ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:31 -0400
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:32 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:32 -0400
+Served asset /bootstrap.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:32 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:32 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:33 -0400
+Served asset /home.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:33 -0400
+Served asset /events.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:33 -0400
+Served asset /users.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-25 18:11:34 -0400
+Served asset /up_files.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:34 -0400
+Served asset /jquery.js - 200 OK (41ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:34 -0400
+Served asset /jquery_ujs.js - 200 OK (26ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /bootstrap.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /events.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /home.js - 200 OK (54ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /up_files.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-25 18:11:35 -0400
+Served asset /application.js - 200 OK (15ms)
