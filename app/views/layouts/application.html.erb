@@ -14,21 +14,19 @@
     <div class="wrapper">
     <!-- 1 nav bar goes here -->
     <div class="header">
-      <div class ="logo"><%= link_to "MegaUpload", home_path %></div>
+      <div class ="logo"><%= link_to image_tag("Logo-Small.png"), home_path  %></div>
 		<% if session[:user_id] %>
       <div class="logout_header"><%= link_to "Logout", logout_path %></div>
 		<% else %>
-			<div class="signs_header"><%= link_to "Sign In", home_path %>
+			<div class="signs_header"><%= link_to "Sign In", home_path %> - 
       <%= link_to 'Sign Up', new_user_path %></div>
-		<% end %>
-		
-		<hr>
+		<% end %>		
 	</div>
     <div class="content" id="main" role="main">
               <%= yield %>
               <div class="push"></div>
     </div> <!--! end of #main -->
-	  <div id="footer"><hr>Footer
+	  <div id="footer">Ignacio Carmach - Juan Jaime Diaz - Tom&aacute;s Mart&iacute;nez
     </div>
 </div>
 <%= javascript_include_tag "application" %>

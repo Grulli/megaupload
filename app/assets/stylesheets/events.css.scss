@@ -5,3 +5,53 @@
 .event-table{
 	
 }
+
+.new_event{
+	//float:right;
+	//display:inline-block
+	margin-bottom: 30px;
+}
+
+#new_event_button{
+	display:inline-block;
+	float: right;
+	margin-right: 50px;
+}
+
+#new_event_heading{
+	display:inline-block;
+  padding-left: 320px;
+}
+
+.event-table{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.create_new_event{
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .create_new_event .form-signin-heading,
+      .create_new_event .checkbox {
+        margin-bottom: 10px;
+      }
+      .create_new_event input[type="text"],
+      .create_new_event input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+.event_view_header .form-signin-heading{
+	display:inline-block;
+}

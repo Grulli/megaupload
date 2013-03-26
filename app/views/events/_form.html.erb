@@ -1,5 +1,4 @@
-<%= form_for(@event) do |f| %>
-  <% if @event.errors.any? %>
+<center><% if @event.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
 
@@ -9,11 +8,10 @@
       <% end %>
       </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <% end %></center>
+<%= form_for(@event, :html => { :class => "create_new_event"} ) do |f| %>
+  <center><div class="field">
+    <%= f.text_field :name, :class=>'input-block-level', :placeholder=>'Event Name'%>
   </div>
   <div class="field">
     <%= f.label :end_date %><br />
@@ -23,11 +21,11 @@
     <%= f.label :file_type %><br />
     <%= f.text_field :file_type %>
   </div>
-  <div class="field">
-    <%= f.label :guests %> Separated by ; <br />
-    <%= f.text_field :guest_list %>
+<div class="field">
+    <%= f.text_field :guest_list , :class=>'input-block-level', :placeholder=>'Guests (Separated by ;)'%>
   </div>
   <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit 'Create Event', :class => 'btn btn-large btn-primary' %>
+  </div></center>
 <% end %>
+
