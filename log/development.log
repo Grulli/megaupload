@@ -66077,3 +66077,631 @@ Served asset /oauth.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 15:25:03 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 16:28:04 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from c:in `find_template':)
+  Rendered home/index.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 328ms (Views: 314.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /bootstrap.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /events.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /oauth.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /up_files.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:06 -0400
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /events.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /oauth.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /up_files.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:07 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"41MGjyXasA0SXhqSkJO5UEKnhpFa2mRnuvfl6C+7Wfo=", "mail"=>"", "password"=>"[FILTERED]", "commit"=>"Sign Up"}
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (6.0ms)
+  Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:13 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-26 16:28:18 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"41MGjyXasA0SXhqSkJO5UEKnhpFa2mRnuvfl6C+7Wfo=", "user"=>{"mail"=>"timartin@uc.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."mail" = 'timartin@uc.cl' LIMIT 1
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "users" ("created_at", "mail", "password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 26 Mar 2013 20:28:18 UTC +00:00], ["mail", "timartin@uc.cl"], ["password", "cGFzc3dvcmQ=\n"], ["updated_at", Tue, 26 Mar 2013 20:28:18 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 16:28:18 -0400
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from c:in `find_template':)
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."user_id" = 24[0m
+  Rendered events/_index.html.erb (1.0ms)
+  Rendered home/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:19 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:20 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:21 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:22 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2013-03-26 16:28:26 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"41MGjyXasA0SXhqSkJO5UEKnhpFa2mRnuvfl6C+7Wfo=", "event"=>{"name"=>"Test", "end_date(1i)"=>"2014", "end_date(2i)"=>"3", "end_date(3i)"=>"26", "end_date(4i)"=>"20", "end_date(5i)"=>"28", "file_type"=>"", "guest_list"=>"timartin@mailop.com; timartin@uc.cl"}, "commit"=>"Create Event"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("created_at", "end_date", "file_type", "guest_list", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 26 Mar 2013 20:28:26 UTC +00:00], ["end_date", Wed, 26 Mar 2014 20:28:00 UTC +00:00], ["file_type", ""], ["guest_list", "timartin@mailop.com; timartin@uc.cl"], ["name", "Test"], ["updated_at", Tue, 26 Mar 2013 20:28:26 UTC +00:00], ["user_id", 24]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "up_files" ("Url", "created_at", "event_id", "mail", "updated_at", "upload_file_content_type", "upload_file_file_name", "upload_file_file_size", "upload_file_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["Url", nil], ["created_at", Tue, 26 Mar 2013 20:28:26 UTC +00:00], ["event_id", 11], ["mail", "timartin@mailop.com"], ["updated_at", Tue, 26 Mar 2013 20:28:26 UTC +00:00], ["upload_file_content_type", nil], ["upload_file_file_name", nil], ["upload_file_file_size", nil], ["upload_file_updated_at", nil]]
+[paperclip] Saving attachments.
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  Rendered invitation_mailer/invitation_mail.html.erb (1.0ms)
+
+Sent mail to timartin@mailop.com (2112ms)
+Date: Tue, 26 Mar 2013 16:28:27 -0400
+From: mega-up@desaweb1.ing.puc.cl
+To: timartin@mailop.com
+Message-ID: <515204ebea462_26081ef897c36947@Tomas-Portege.mail>
+Subject: You have been invited to
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	</head>
+	<body>
+	</body>
+</html>
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "up_files" ("Url", "created_at", "event_id", "mail", "updated_at", "upload_file_content_type", "upload_file_file_name", "upload_file_file_size", "upload_file_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Url", nil], ["created_at", Tue, 26 Mar 2013 20:28:30 UTC +00:00], ["event_id", 11], ["mail", " timartin@uc.cl"], ["updated_at", Tue, 26 Mar 2013 20:28:30 UTC +00:00], ["upload_file_content_type", nil], ["upload_file_file_name", nil], ["upload_file_file_size", nil], ["upload_file_updated_at", nil]]
+[paperclip] Saving attachments.
+  [1m[35m (2.0ms)[0m  commit transaction
+  Rendered invitation_mailer/invitation_mail.html.erb (0.0ms)
+
+Sent mail to timartin@uc.cl (2006ms)
+Date: Tue, 26 Mar 2013 16:28:30 -0400
+From: mega-up@desaweb1.ing.puc.cl
+To: timartin@uc.cl
+Message-ID: <515204ee6850_26081ef897c3704f@Tomas-Portege.mail>
+Subject: You have been invited to
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	</head>
+	<body>
+	</body>
+</html>
+Redirected to http://localhost:3000/events/11
+Completed 302 Found in 5098ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/events/11" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:32 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:33 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/up_files" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Processing by UpFilesController#index as HTML
+  [1m[35mUpFile Load (0.0ms)[0m  SELECT "up_files".* FROM "up_files" 
+  Rendered up_files/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /oauth.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 16:28:37 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 16:28:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
