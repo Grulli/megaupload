@@ -4,21 +4,18 @@
 <% end %>
 </center>
 <% if !session[:user_id] %>
-	<div class="facebook-login">
+<div class="facebook-login">
         <a class="btn-large btn btn-custom" href="/facebook">f |	Login with Facebook</a>
 	</div>
-    <div class="login-separator">
-      	 <hr><div class="login-or"><p>OR</p></div><hr>
+<div class="container">
+
+     <%= form_for(User.new, :url => '/', :class => 'new_user') do |f| %>
+     <h2 class="form-signin-heading">Please sign in</h2>
+     <input type="text" name="mail" class="input-block-level" id="mail" placeholder="Email address">
+     <input type="password" name="password" id="password" class="input-block-level" placeholder="Password">
+	 <%= f.submit "Login" , :name => "commit", :class => "btn btn-large btn-primary" %><%= f.submit "Sign Up" , :name => "commit", :class => "btn btn-large btn-primary" %>
+ 	 <% end %>
     </div>
-	<div class="regular-login">
-		<%= form_for(User.new, :url => '/') do |f| %>
-			<p><label for="mail">Email</label> <input type="text" name="mail" id="mail" /></p>
-			<p><label for="password">Password</label> <input type="password" name="password" id="password" /></p>
-			<p class="submit"><%= f.submit "Login" , :name => "commit", :class => "btn login-button" %></p>
-			<div class="separator"></div>
-			<p class="sign-up"><%= f.submit "Sign Up" , :name => "commit", :class => "btn sing-up-button" %></p>
-		<% end %>
-	</div>
 <% else %>
 	<% @events = Event.find_all_by_user_id(session[:user_id]) %>
 	<%= render 'events/index' %>

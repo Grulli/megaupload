@@ -13,19 +13,15 @@
   <body>
     <div class="wrapper">
     <!-- 1 nav bar goes here -->
-    <div id="header">
+    <div class="header">
+      <div class ="logo"><%= link_to "MegaUpload", home_path %></div>
 		<% if session[:user_id] %>
-			<%= form_for(User.new, :url => '/logout') do |f| %>
-				<p class="submit"><%= f.submit "Logout" , :name => "commit", :class => "btn login-button" %></p>
-			<% end %>
+      <div class="logout_header"><%= link_to "Logout", logout_path %></div>
 		<% else %>
-			<%= form_for(User.new, :url => home_path) do |f| %>
-				<p class="submit"><%= f.submit "Sign In" , :name => "commit", :class => "btn login-button" %></p>
-				<div class="separator"></div>
-				<p class="submit"><%= f.submit "Sign Up" , :name => "commit", :class => "btn login-button" %></p>
-			<% end %>
+			<div class="signs_header"><%= link_to "Sign In", home_path %>
+      <%= link_to 'Sign Up', new_user_path %></div>
 		<% end %>
-		<%= link_to "MegaUpload", home_path %>
+		
 		<hr>
 	</div>
     <div class="content" id="main" role="main">

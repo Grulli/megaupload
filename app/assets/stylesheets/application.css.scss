@@ -15,7 +15,7 @@
 .navbar navbar-fixed-top{
 	background-color: #ffff;
 }
-#header {
+.header {
   position: absolute;
     top: 0px;
     width: 100%;
@@ -24,6 +24,18 @@
    background-color: #ffff;
    text-align: center;
 }
+.logo{
+  float: left;
+}
+
+.logout_header{
+  float:right;
+}
+
+.signs_header{
+  float:right;
+}
+
 #footer {
   position: absolute;
     bottom: 10px;
