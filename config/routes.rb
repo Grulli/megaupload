@@ -14,6 +14,8 @@ Megaupload::Application.routes.draw do
 	match 'facebook' => 'oauth#new_facebook'
 
 	match 'facebook_login' => 'oauth#facebook_login'
+	
+	match 'upload' => 'up_files#upload', :as => :upload
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -55,8 +55,17 @@ class EventsController < ApplicationController
 	if session[:user_id]
 		@event = Event.new(params[:event])
 		@event.user_id = session[:user_id]
+
 		respond_to do |format|
 			if @event.save
+				@event.guest_list.split(';').each do |g|
+					@up_file = UpFile.new()
+					@up_file.mail = g
+					@up_file.event_id = @event.id
+					if @up_file.save
+						InvitationMailer.invitation_mail(@up_file, @event).deliver
+					end
+				end
 				format.html { redirect_to @event, notice: 'Event was successfully created.' }
 				format.json { render json: @event, status: :created, location: @event }
 			else

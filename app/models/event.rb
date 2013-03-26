@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-	attr_accessible :end_date, :file_type, :name, :user_id
+	attr_accessible :end_date, :file_type, :name, :user_id, :guest_list
 	
 	belongs_to :user
 	has_many :up_files
