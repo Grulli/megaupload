@@ -4,7 +4,7 @@ class InvitationMailer < ActionMailer::Base
 	def invitation_mail(up_file, event)
 		@up_file = up_file
 		@event = event
-		@url = upload_path 
+		@url = "desaweb1.ing.puc.cl" 
 		mail(:to => up_file.mail, :subject => "You have been invited to ")
 	end
 end
