@@ -63,7 +63,10 @@ class EventsController < ApplicationController
 					@up_file.mail = g
 					@up_file.event_id = @event.id
 					if @up_file.save
-						InvitationMailer.invitation_mail(@up_file, @event).deliver
+						begin
+							InvitationMailer.invitation_mail(@up_file, @event).deliver
+						rescue Exception => e
+						end
 					end
 				end
 				format.html { redirect_to @event, notice: 'Event was successfully created.' }
