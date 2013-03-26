@@ -51181,3 +51181,1296 @@ Served asset /users.js - 304 Not Modified (3ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-25 20:03:31 -0400
 Served asset /application.js - 304 Not Modified (38ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+Migrating to AddAttachmentUpFileToUpfiles (20130326180437)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "upfiles" ADD "up_file_file_name" varchar(255)
+SQLite3::SQLException: no such table: upfiles: ALTER TABLE "upfiles" ADD "up_file_file_name" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+Migrating to AddAttachmentUpFileToUpfiles (20130326180437)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "upfiles" ADD "uploaded_file_name" varchar(255)
+SQLite3::SQLException: no such table: upfiles: ALTER TABLE "upfiles" ADD "uploaded_file_name" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+Migrating to AddAttachmentUpFileToUpfiles (20130326180437)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "upfiles" ADD "up_file_file_name" varchar(255)
+SQLite3::SQLException: no such table: upfiles: ALTER TABLE "upfiles" ADD "up_file_file_name" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130319235848)
+Migrating to CreateEvents (20130320192456)
+Migrating to CreateUpFiles (20130320192650)
+Migrating to AddUserIdColumnToEvents (20130320193719)
+Migrating to AddEventIdColumnToUpFiles (20130320193816)
+Migrating to AddAttachmentUploadFileToUpFiles (20130326181013)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "up_files" ADD "upload_file_file_name" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "up_files" ADD "upload_file_content_type" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "up_files" ADD "upload_file_file_size" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "up_files" ADD "upload_file_updated_at" datetime[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130326181013')
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 14:13:21 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from realtime at /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296)
+  Rendered home/index.html.erb within layouts/application (61.7ms)
+Compiled bootstrap-responsive.css  (0ms)  (pid 42705)
+Compiled bootstrap-responsive.min.css  (0ms)  (pid 42705)
+Compiled bootstrap.css  (1904ms)  (pid 42705)
+Compiled bootstrap.min.css  (1ms)  (pid 42705)
+Compiled events.css  (2ms)  (pid 42705)
+Compiled home.css  (13ms)  (pid 42705)
+Compiled oauth.css  (2ms)  (pid 42705)
+Compiled scaffolds.css  (15ms)  (pid 42705)
+Compiled up_files.css  (1ms)  (pid 42705)
+Compiled users.css  (1ms)  (pid 42705)
+Compiled application.css  (2064ms)  (pid 42705)
+Compiled jquery.js  (40ms)  (pid 42705)
+Compiled jquery_ujs.js  (0ms)  (pid 42705)
+Compiled bootstrap.js  (1ms)  (pid 42705)
+Compiled bootstrap.min.js  (0ms)  (pid 42705)
+Compiled events.js  (106ms)  (pid 42705)
+Compiled home.js  (1ms)  (pid 42705)
+Compiled oauth.js  (1ms)  (pid 42705)
+Compiled up_files.js  (0ms)  (pid 42705)
+Compiled users.js  (0ms)  (pid 42705)
+Compiled application.js  (197ms)  (pid 42705)
+Completed 200 OK in 2471ms (Views: 2469.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:23 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:23 -0400
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:23 -0400
+Served asset /bootstrap.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:23 -0400
+Served asset /home.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:23 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:23 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /events.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /oauth.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /oauth.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /users.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /home.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /events.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /up_files.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /jquery.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /up_files.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:24 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/up_files" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Processing by UpFilesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from realtime at /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296)
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:34 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/upfiles" for 127.0.0.1 at 2013-03-26 14:13:37 -0400
+
+ActionController::RoutingError (No route matches [GET] "/upfiles"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from realtime at /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296)
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:13:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/up_files" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Processing by UpFilesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from realtime at /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296)
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/up_files/new" for 127.0.0.1 at 2013-03-26 14:14:12 -0400
+Processing by UpFilesController#new as HTML
+  Rendered up_files/_form.html.erb (3.0ms)
+  Rendered up_files/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for @user, :html => { :multipart => true } do |f| %>
+    2:   <% if @up_file.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@up_file.errors.count, "error") %> prohibited this up_file from being saved:</h2>
+  app/views/up_files/_form.html.erb:1:in `_app_views_up_files__form_html_erb___4494134164588261379_70132360185760'
+  app/views/up_files/new.html.erb:3:in `_app_views_up_files_new_html_erb___4261705359864107366_70132360107240'
+  app/controllers/up_files_controller.rb:36:in `new'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/up_files/new" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Processing by UpFilesController#new as HTML
+  Rendered up_files/_form.html.erb (12.4ms)
+  Rendered up_files/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:14:47 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started POST "/up_files" for 127.0.0.1 at 2013-03-26 14:15:12 -0400
+Processing by UpFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DMv7O77dugy43za0u1X6pV0GIpnyS38BIBlCyZsOKJk=", "up_file"=>{"Url"=>"asdasd", "mail"=>"asdadasdadad@asasd.com", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x007f91ec862fd8 @original_filename="yo.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"up_file[upload_file]\"; filename=\"yo.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/wr/6yz1r8rx2t18ldfjlt507_fr0000gn/T/RackMultipart20130326-42705-scxf46>>}, "commit"=>"Create Up file"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `upload_file_content_type`
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "up_files" ("Url", "created_at", "event_id", "mail", "updated_at", "upload_file_content_type", "upload_file_file_name", "upload_file_file_size", "upload_file_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["Url", "asdasd"], ["created_at", Tue, 26 Mar 2013 18:15:12 UTC +00:00], ["event_id", nil], ["mail", "asdadasdadad@asasd.com"], ["updated_at", Tue, 26 Mar 2013 18:15:12 UTC +00:00], ["upload_file_content_type", "image/jpeg"], ["upload_file_file_name", "yo.jpg"], ["upload_file_file_size", 102715], ["upload_file_updated_at", Tue, 26 Mar 2013 18:15:12 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/up_files/6
+Completed 302 Found in 17ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/up_files/6" for 127.0.0.1 at 2013-03-26 14:15:12 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUpFile Load (0.2ms)[0m  SELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1  [["id", "6"]]
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/up_files_controller.rb:21:in `show'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/up_files/6" for 127.0.0.1 at 2013-03-26 14:15:38 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUpFile Load (0.1ms)[0m  [1mSELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/up_files_controller.rb:21:in `show'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started POST "/up_files" for 127.0.0.1 at 2013-03-26 14:15:41 -0400
+Processing by UpFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DMv7O77dugy43za0u1X6pV0GIpnyS38BIBlCyZsOKJk=", "up_file"=>{"Url"=>"asdasd", "mail"=>"asdadasdadad@asasd.com", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x007f91ecb9b858 @original_filename="yo.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"up_file[upload_file]\"; filename=\"yo.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/wr/6yz1r8rx2t18ldfjlt507_fr0000gn/T/RackMultipart20130326-42705-uwzqkn>>}, "commit"=>"Create Up file"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `upload_file_content_type`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "up_files" ("Url", "created_at", "event_id", "mail", "updated_at", "upload_file_content_type", "upload_file_file_name", "upload_file_file_size", "upload_file_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Url", "asdasd"], ["created_at", Tue, 26 Mar 2013 18:15:41 UTC +00:00], ["event_id", nil], ["mail", "asdadasdadad@asasd.com"], ["updated_at", Tue, 26 Mar 2013 18:15:41 UTC +00:00], ["upload_file_content_type", "image/jpeg"], ["upload_file_file_name", "yo.jpg"], ["upload_file_file_size", 102715], ["upload_file_updated_at", Tue, 26 Mar 2013 18:15:41 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/up_files/7
+Completed 302 Found in 48ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/up_files/7" for 127.0.0.1 at 2013-03-26 14:15:41 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUpFile Load (0.1ms)[0m  [1mSELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/up_files_controller.rb:21:in `show'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/up_files/new" for 127.0.0.1 at 2013-03-26 14:15:55 -0400
+Connecting to database specified by database.yml
+Processing by UpFilesController#new as HTML
+  Rendered up_files/_form.html.erb (7.6ms)
+  Rendered up_files/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 152ms (Views: 95.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /bootstrap.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /events.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /home.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /oauth.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /up_files.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /users.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /jquery.js - 304 Not Modified (54ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /up_files.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /events.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /oauth.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:15:56 -0400
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started POST "/up_files" for 127.0.0.1 at 2013-03-26 14:16:04 -0400
+Processing by UpFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DMv7O77dugy43za0u1X6pV0GIpnyS38BIBlCyZsOKJk=", "up_file"=>{"Url"=>"asdasd", "mail"=>"asdadasdadad@asasd.com", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x007ff72dedb238 @original_filename="yo.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"up_file[upload_file]\"; filename=\"yo.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<Tempfile:/var/folders/wr/6yz1r8rx2t18ldfjlt507_fr0000gn/T/RackMultipart20130326-42736-1edmncn>>}, "commit"=>"Create Up file"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `upload_file_content_type`
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "up_files" ("Url", "created_at", "event_id", "mail", "updated_at", "upload_file_content_type", "upload_file_file_name", "upload_file_file_size", "upload_file_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["Url", "asdasd"], ["created_at", Tue, 26 Mar 2013 18:16:04 UTC +00:00], ["event_id", nil], ["mail", "asdadasdadad@asasd.com"], ["updated_at", Tue, 26 Mar 2013 18:16:04 UTC +00:00], ["upload_file_content_type", "image/jpeg"], ["upload_file_file_name", "yo.jpg"], ["upload_file_file_size", 102715], ["upload_file_updated_at", Tue, 26 Mar 2013 18:16:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/up_files/8
+Completed 302 Found in 17ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/up_files/8" for 127.0.0.1 at 2013-03-26 14:16:04 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUpFile Load (0.2ms)[0m  SELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1  [["id", "8"]]
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/up_files_controller.rb:21:in `show'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/up_files" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Processing by UpFilesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Processing by HomeController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from realtime at /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296)
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:17:19 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/up_files/8" for 127.0.0.1 at 2013-03-26 14:17:28 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUpFile Load (0.2ms)[0m  [1mSELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1[0m  [["id", "8"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `user' for nil:NilClass):
+  app/controllers/up_files_controller.rb:21:in `show'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/up_files/8" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUpFile Load (0.1ms)[0m  SELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered up_files/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 64ms (Views: 52.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/system/up_files/upload_files/000/000/008/medium/yo.jpg?1364321764" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/up_files/upload_files/000/000/008/medium/yo.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/system/up_files/upload_files/000/000/008/thumb/yo.jpg?1364321764" for 127.0.0.1 at 2013-03-26 14:19:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/up_files/upload_files/000/000/008/thumb/yo.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/up_files/8" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUpFile Load (0.1ms)[0m  [1mSELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered up_files/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:18 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/system/up_files/upload_files/000/000/008/medium/yo.jpg?1364321764" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/up_files/upload_files/000/000/008/medium/yo.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/system/up_files/upload_files/000/000/008/thumb/yo.jpg?1364321764" for 127.0.0.1 at 2013-03-26 14:20:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/up_files/upload_files/000/000/008/thumb/yo.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/iCarmach/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/iCarmach/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/up_files/8" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Processing by UpFilesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUpFile Load (0.1ms)[0m  SELECT "up_files".* FROM "up_files" WHERE "up_files"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered up_files/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /oauth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /up_files.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/oauth.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /oauth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/up_files.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /up_files.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-26 14:20:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)

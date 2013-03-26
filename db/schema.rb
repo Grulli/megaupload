@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130320193816) do
+ActiveRecord::Schema.define(:version => 20130326181013) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -25,9 +25,13 @@ ActiveRecord::Schema.define(:version => 20130320193816) do
   create_table "up_files", :force => true do |t|
     t.string   "Url"
     t.string   "mail"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
     t.integer  "event_id"
+    t.string   "upload_file_file_name"
+    t.string   "upload_file_content_type"
+    t.integer  "upload_file_file_size"
+    t.datetime "upload_file_updated_at"
   end
 
   create_table "users", :force => true do |t|

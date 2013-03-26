@@ -10,6 +10,16 @@
   <%= @up_file.mail %>
 </p>
 
+<p>
+  <b>Upload File URL:</b>
+  <%= image_tag @up_file.upload_file.url %>
+</p>
+
+<p>
+  <b>Upload File Medium:</b>
+  <%= @up_file.upload_file.url(:medium) %>
+</p>
+
 
 <%= link_to 'Edit', edit_up_file_path(@up_file) %> |
 <%= link_to 'Back', up_files_path %>

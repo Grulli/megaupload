@@ -40,3 +40,4 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 
 gem 'oauth2', '~> 0.4.1'
+gem "paperclip", "~> 3.4.1"

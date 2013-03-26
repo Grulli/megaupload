@@ -1,7 +1,7 @@
 class UpFile < ActiveRecord::Base
-  attr_accessible :Url, :mail, :event_id
+  	attr_accessible :Url, :mail, :event_id, :upload_file
   
-  belongs_to :event
+  	belongs_to :event
   
 	def gen_token
 		token = ""
@@ -22,5 +22,7 @@ class UpFile < ActiveRecord::Base
 		token = token + rand(token.to_i).to_s
 		return token
 	end
+
+	has_attached_file :upload_file
   
 end
