@@ -60,7 +60,7 @@ class EventsController < ApplicationController
 			if @event.save
 				@event.guest_list.split(';').each do |g|
 					@up_file = UpFile.new()
-					@up_file.mail = g
+					@up_file.mail = g.delete(' ')
 					@up_file.event_id = @event.id
 					if @up_file.save
 						begin
@@ -69,6 +69,7 @@ class EventsController < ApplicationController
 						end
 					end
 				end
+				#redirect_to home_path
 				format.html { redirect_to @event, notice: 'Event was successfully created.' }
 				format.json { render json: @event, status: :created, location: @event }
 			else
