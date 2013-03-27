@@ -1,7 +1,9 @@
-<p id="notice"><%= notice %></p>
-<p>
- <div class="event_view_header"><center><h1 class="form-signin-heading"><%= @event.name %></h1>(<%= link_to 'Edit', edit_event_path(@event) %>)</center></div>
-</p>
+<center><p id="notice"><%= notice %></p></center>
+
+<div class="event_view_header"><center><h1 id="event-name-heading" class="form-signin-heading"><%= @event.name %></h1>(<%= link_to 'Edit', edit_event_path(@event) %>)<a id="new_event_button" class="btn btn-primary btn-large" href="/addguests">+ |  Add Guests</a></center></div>
+
+
+<!-- <div class="event_view_header"><center><h1 class="form-signin-heading"><%= @event.name %></h1>(<%= link_to 'Edit', edit_event_path(@event) %>)</center></div> -->
 <center>
 <p>
   <b>End date:</b>
@@ -14,3 +16,26 @@
 </p>
 </center>
 <!-- Table of users go here -->
+<% if @event.up_files.empty? %>
+<center><p> You don't have any guests! </p></center>
+<% else %>
+<div class="guests-table">
+<table class="table table-bordered table-hover">
+  <tr>
+    <th>Email</th>
+    <th>File</th>
+  </tr>
+
+<% @event.up_files.each do |up_file| %>
+  <tr>
+    <td><%= up_file.mail %></td>
+    <% if up_file.Url.nil? %>
+    <td><p> No file! </p></td>
+    <% else %>
+    <td><%= link_to 'File', up_file.Url -%></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+</div>
+<% end %>
