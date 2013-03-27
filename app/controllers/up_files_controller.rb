@@ -65,15 +65,14 @@ class UpFilesController < ApplicationController
   def update
     @up_file = UpFile.find(params[:id])
 
-    respond_to do |format|
       if @up_file.update_attributes(params[:up_file])
-        format.html { redirect_to @up_file, notice: 'Up file was successfully updated.' }
-        format.json { head :no_content }
+        redirect_to home_path
       else
-        format.html { render action: "edit" }
-        format.json { render json: @up_file.errors, status: :unprocessable_entity }
-      end
-    end
+	respond_to do |format|
+        	format.html { render action: "edit" }
+        	format.json { render json: @up_file.errors, status: :unprocessable_entity }
+      	end
+     end
   end
 
   # DELETE /up_files/1

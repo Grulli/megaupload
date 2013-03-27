@@ -24,5 +24,6 @@ class UpFile < ActiveRecord::Base
 	end
 
 	has_attached_file :upload_file
+	
   
 end
