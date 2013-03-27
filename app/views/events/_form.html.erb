@@ -16,17 +16,13 @@
   <div class="field">
     <%= f.label :end_date %><br />
     <%= f.datetime_select :end_date, :start_year =>  Time.now.year %>
-    <!--  <div class="input-append date" id="datepicker" data-date="dateValue: Customer.DateOfBirth" data-date-format="yyyy-mm-dd">
-    <input class="span2" size="16" type="text" data-bind="value: Customer.DateOfBirth" readonly="readonly" />
-    <span class="add-on"><i class="icon-calendar"></i></span>
-</div>   -->
   </div>
   <div class="field">
     <%= f.label :file_type %><br />
     <%= f.text_field :file_type %>
   </div>
 <div class="field">
-    <%= f.text_area :guest_list , :id=>'guest-text-box',:class=>'input-block-level', :rows=>'10',:placeholder=>'Guests (Separated by ;)'%>
+    <textarea class="input-block-level" cols="40" id="guest-text-box" name="event[guest_list]" placeholder="Guests (Separated by ;)" rows="5"></textarea>
   </div>
   <div class="actions">
     <%= f.submit 'Create Event', :class => 'btn btn-large btn-primary' %>

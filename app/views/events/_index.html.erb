@@ -18,7 +18,7 @@
     <td><%= link_to event.name, event %></td>
     <td><%= event.end_date %></td>
     <td><%= event.file_type %></td>
-    <td>0/1</td>
+    <td>-</td>
     <td><%= link_to 'Show', event %> - <%= link_to 'Edit', edit_event_path(event) %> - <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>

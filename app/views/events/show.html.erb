@@ -1,6 +1,6 @@
 <center><p id="notice"><%= notice %></p></center>
 
-<div class="event_view_header"><center><h1 id="event-name-heading" class="form-signin-heading"><%= @event.name %></h1>(<%= link_to 'Edit', edit_event_path(@event) %>)<a id="new_event_button" class="btn btn-primary btn-large" href="/addguests">+ |  Add Guests</a></center></div>
+<div class="event_view_header"><center><h1 id="event-name-heading" class="form-signin-heading"><%= @event.name %></h1>(<%= link_to 'Edit', edit_event_path(@event) %>)</center></div>
 
 
 <!-- <div class="event_view_header"><center><h1 class="form-signin-heading"><%= @event.name %></h1>(<%= link_to 'Edit', edit_event_path(@event) %>)</center></div> -->
@@ -29,12 +29,11 @@
 <% @event.up_files.each do |up_file| %>
   <tr>
     <td><%= up_file.mail %></td>
-    <% if up_file.Url.nil? %>
+    <% if up_file.upload_file_file_size %>
     <td><p> No file! </p></td>
     <% else %>
-    <td><%= link_to 'File', up_file.Url -%></td>
-    <% end %>
-  </tr>
+    <td><%= link_to 'File', up_file.upload_file.url %></td>
+    <% end %>   </tr>
 <% end %>
 </table>
 </div>
