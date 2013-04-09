@@ -48,19 +48,32 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
 	if !session[:user_id]
+		@rand = params[:captcha_random].to_s
+		@rand = @rand.from(11).to_i
+		@answer = params[:captcha].to_s.from(64)[0..-3]
+		@captcha_value = open("http://captchator.com/captcha/check_answer/#{@rand}/#{@answer}").read.to_i
+		
+		
 		@user = User.new(params[:user])
 		@user.password = Base64.encode64(@user.password)
 		@user.password_confirmation = Base64.encode64(@user.password_confirmation)
-
-		respond_to do |format|
-			if @user.save
-				
-				flash[:error] = "Welcome to megaupload"
-				session[:user_id] = @user.id
+			
+		if @captcha_value == 1
+			respond_to do |format|
+				if @user.save
+					flash[:error] = "Welcome to megaupload"
+					session[:user_id] = @user.id
 		
-				format.html { redirect_to home_path }
-				format.json { render json: @user, status: :created, location: @user }
-			else
+					format.html { redirect_to home_path }
+					format.json { render json: @user, status: :created, location: @user }
+				else
+					format.html { render action: "new" }
+					format.json { render json: @user.errors, status: :unprocessable_entity }
+				end
+			end
+		else
+			@user.errors.add(:captcha, "invalido")
+			respond_to do |format|
 				format.html { render action: "new" }
 				format.json { render json: @user.errors, status: :unprocessable_entity }
 			end

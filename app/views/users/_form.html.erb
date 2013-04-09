@@ -20,6 +20,12 @@
   <div class="field">
 	<%= f.password_field :password_confirmation, :class=>'input-block-level', :placeholder=>'Confirmación de contraseña'%>
   </div>
+  <div class="field">
+	<% @random = rand(10000) %>
+	<%= image_tag("http://captchator.com/captcha/image/#{@random}") %>
+	<%= text_field :captcha, :class=>'input-block-level',  :placeholder=>'Captcha' %>
+	<%= hidden_field :captcha_random, :value => @random %>
+  </div>
   <div class="actions">
     <%= f.submit 'Registrarse', :class => 'btn btn-large btn-primary' %></center>
   </div>
