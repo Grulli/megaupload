@@ -10,8 +10,11 @@ class Event < ActiveRecord::Base
 	validate :validate_future_end_date
 	
 	def validate_future_end_date
-		if end_date < Time.now
-			errors.add(:end_date, "The event must end in the future") if end_date < Time.now
+		if end_date
+			if end_date < Time.now
+			errors.add(:end_date, ": El evento debe terminar en el futuro") if end_date < Time.now
+			end
 		end
+
 	end
 end

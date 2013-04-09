@@ -61,7 +61,7 @@ class UsersController < ApplicationController
 		if @captcha_value == 1
 			respond_to do |format|
 				if @user.save
-					flash[:error] = "Welcome to megaupload"
+					flash[:error] = "Bienvenido a MegaUP"
 					session[:user_id] = @user.id
 		
 					format.html { redirect_to home_path }

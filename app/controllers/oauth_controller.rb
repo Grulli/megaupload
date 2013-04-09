@@ -53,14 +53,14 @@ class OauthController < ApplicationController
 					@user.mail = @result['email']
 					@user.password = @result['id']
 					if @user.save
-						flash[:error] = "A user has been created for the mail #{@result['email']} with the temporary password #{@result['id']}"
+						flash[:error] = "Un usuario has sido creado para el email #{@result['email']} con la contrase&ntilde;a temporal #{@result['id']}"
 						session[:user_id] = @user.id
 					else
-						flash[:error] = "Could not login"
+						flash[:error] = "No se pudo ingresar"
 					end
 				end
 			else
-				flash[:error] = "Could not login"
+				flash[:error] = "No se pudo ingresar"
 			end
 		end
 		redirect_to home_path
