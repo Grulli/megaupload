@@ -70,7 +70,7 @@ class EventsController < ApplicationController
 					end
 				end
 				#redirect_to home_path
-				format.html { redirect_to @event, notice: 'Event was successfully created.' }
+				format.html { redirect_to @event, notice: 'Evento fue creado exitosamente.' }
 				format.json { render json: @event, status: :created, location: @event }
 			else
 				format.html { render action: "new" }
@@ -90,7 +90,7 @@ class EventsController < ApplicationController
 	if session[:user_id] == @event.user_id
 		respond_to do |format|
 			if @event.update_attributes(params[:event])
-				format.html { redirect_to @event, notice: 'Event was successfully updated.' }
+				format.html { redirect_to @event, notice: 'Evento fue actualizado con &eactue;xito.' }
 				format.json { head :no_content }
 			else
 				format.html { render action: "edit" }
