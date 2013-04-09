@@ -90,7 +90,7 @@ class EventsController < ApplicationController
 	if session[:user_id] == @event.user_id
 		respond_to do |format|
 			if @event.update_attributes(params[:event])
-				format.html { redirect_to @event, notice: 'Evento fue actualizado con &eacute;xito.' }
+				format.html { redirect_to @event, notice: 'Evento fue actualizado.' }
 				format.json { head :no_content }
 			else
 				format.html { render action: "edit" }

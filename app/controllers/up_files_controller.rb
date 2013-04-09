@@ -89,18 +89,18 @@ class UpFilesController < ApplicationController
   
 	def upload
 		if !params[:mail] or !params[:event] or !params[:token]
-			flash[:error] = "Link inv&aacute;lido."
+			flash[:error] = "Link equivocado."
 			redirect_to home_path
 		else
 			if !UpFile.exists?(:mail=> params[:mail], :event_id => params[:event])
-				flash[:error] = "Link inv&aacute;lido."
+				flash[:error] = "Link equivocado."
 				redirect_to home_path
 			else
 				@up_file = UpFile.find_by_mail_and_event_id(params[:mail],params[:event])
 				if @up_file.gen_token == params[:token]
 					render 'upload.html'
 				else
-					flash[:error] = "Link inv&aacute;lido."
+					flash[:error] = "Link equivocado."
 					redirect_to home_path
 				end
 			end

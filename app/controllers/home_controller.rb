@@ -9,10 +9,10 @@ class HomeController < ApplicationController
 				if @user.password == Base64.encode64(params[:password])
 					session[:user_id] = @user.id
 				else
-					flash.now[:error] = "Nombre de usuario o contrase&ntilde;a equivocado"
+					flash.now[:error] = "Nombre de usuario o password equivocado"
 				end
 			else
-				flash.now[:error] = "Nombre de usuario o contrase&ntilde;a equivocado"
+				flash.now[:error] = "Nombre de usuario o password equivocado"
 			end
 		else 
 			if params[:commit] == "Sign Up"

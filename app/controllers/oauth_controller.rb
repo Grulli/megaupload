@@ -53,7 +53,7 @@ class OauthController < ApplicationController
 					@user.mail = @result['email']
 					@user.password = @result['id']
 					if @user.save
-						flash[:error] = "Un usuario has sido creado para el email #{@result['email']} con la contrase&ntilde;a temporal #{@result['id']}"
+						flash[:error] = "Un usuario has sido creado para el email #{@result['email']} con el password temporal #{@result['id']}"
 						session[:user_id] = @user.id
 					else
 						flash[:error] = "No se pudo ingresar"
