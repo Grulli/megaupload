@@ -1,6 +1,6 @@
   <center><% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> evit&oactue; a este usuario ser guardado.</h2>
+      <h2><%= pluralize(@user.errors.count, "error") %> evitó a este usuario ser guardado.</h2>
 
       <ul>
       <% @user.errors.full_messages.each do |msg| %>

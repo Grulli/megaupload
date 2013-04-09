@@ -1,6 +1,6 @@
 <center><% if @event.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@event.errors.count, "error") %> evit&oacute; el guardado de este evento:</h2>
+      <h2><%= pluralize(@event.errors.count, "error") %> evitó el guardado de este evento:</h2>
 
       <ul>
       <% @event.errors.full_messages.each do |msg| %>
