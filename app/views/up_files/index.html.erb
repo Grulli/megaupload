@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Url</th>
-    <th>Mail</th>
+    <th>Email</th>
 	<th>Token</th>
     <th></th>
     <th></th>
@@ -15,13 +15,13 @@
     <td><%= up_file.Url %></td>
     <td><%= up_file.mail %></td>
 	<td><%= up_file.gen_token.to_s %></td>
-    <td><%= link_to 'Show', up_file %></td>
-    <td><%= link_to 'Edit', edit_up_file_path(up_file) %></td>
-    <td><%= link_to 'Destroy', up_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Ver', up_file %></td>
+    <td><%= link_to 'Editar', edit_up_file_path(up_file) %></td>
+    <td><%= link_to 'Eliminar', up_file, method: :delete, data: { confirm: '&iquest;Seguro?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Up file', new_up_file_path %>
+<%= link_to 'Nuebo Archivo de subida', new_up_file_path %>

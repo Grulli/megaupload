@@ -1,25 +1,29 @@
 
-<div class="new_event"><center><h1 id="new_event_heading" class="form-signin-heading">Your Events</h1><a id="new_event_button" class="btn btn-primary btn-large" href="/events/new">+ |  Create New Event</a></center></div>
+<div class="new_event"><center><h1 id="new_event_heading" class="form-signin-heading">Tus Eventos</h1><a id="new_event_button" class="btn btn-primary btn-large" href="/events/new">+ |  Crear Nuevo Evento</a></center></div>
 <% if @events.empty? %>
-<center><p> You don't have any events! </p></center>
+<center><p> &iexcl;No tienes eventos! </p></center>
 <% else %>
 <div class="event-table">
 <table class="table table-bordered table-hover">
   <tr>
-    <th>Name</th>
-    <th>Due date</th>
-    <th>File type</th>
-    <th>Completetion %</th>
-    <th>Options</th>
+    <th>Nombre</th>
+    <th>Fecha L&iacute;mite</th>
+    <th>Tipo de Archivo</th>
+    <th>Invitados</th>
+    <th>Opciones</th>
   </tr>
 
 <% @events.each do |event| %>
   <tr>
     <td><%= link_to event.name, event %></td>
     <td><%= event.end_date %></td>
-    <td><%= event.file_type %></td>
-    <td>-</td>
-    <td><%= link_to 'Show', event %> - <%= link_to 'Edit', edit_event_path(event) %> - <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+     <td><%= event.file_type %></td>
+    <% if event.up_files.empty? %>
+    <td>0</td>
+    <% else %>
+    <td><%= event.up_files.count %></td>
+    <% end %>
+    <td><%= link_to 'Ver', event %> - <%= link_to 'Editar', edit_event_path(event) %> - <%= link_to 'Eliminar', event, method: :delete, data: { confirm: '¿Seguro que desea eliminar el evento?' } %></td>
   </tr>
 <% end %>
 </table>

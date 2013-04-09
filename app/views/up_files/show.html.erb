@@ -6,20 +6,20 @@
 </p>
 
 <p>
-  <b>Mail:</b>
+  <b>Email:</b>
   <%= @up_file.mail %>
 </p>
 
 <p>
-  <b>Upload File URL:</b>
+  <b>URL de subida de archivo:</b>
   <%= image_tag @up_file.upload_file.url %>
 </p>
 
 <p>
-  <b>Upload File:</b>
-  <%= @up_file.upload_file.url(:medium) %>
+  <b>Subir Archivo:</b>
+  <%= @up_file.upload_file.url %>
 </p>
 
 
-<%= link_to 'Edit', edit_up_file_path(@up_file) %> |
-<%= link_to 'Back', up_files_path %>
+<%= link_to 'Editar', edit_up_file_path(@up_file) %> |
+<%= link_to 'Atr&aactue;s', up_files_path %>

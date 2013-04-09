@@ -18,8 +18,8 @@
 		<% if session[:user_id] %>
       <div class="logout_header"><%= link_to "Logout", logout_path %></div>
 		<% else %>
-			<div class="signs_header"><%= link_to "Sign In", home_path %> - 
-      <%= link_to 'Sign Up', new_user_path %></div>
+			<div class="signs_header"><%= link_to "Identificarse", home_path %> - 
+      <%= link_to 'Registrarse', new_user_path %></div>
 		<% end %>		
 	</div>
     <div class="content" id="main" role="main">

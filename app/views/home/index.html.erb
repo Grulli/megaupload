@@ -1,17 +1,17 @@
 <% if !session[:user_id] %>
 <div class="facebook-login">
-        <center><a class="btn btn-primary btn-large" href="/facebook">f |	Login with Facebook</a></center>
+        <center><a class="btn btn-primary btn-large" href="/facebook">f |	Login con Facebook</a></center>
 	</div>
 <div class="container">
 
      <%= form_for(User.new, :url => '/', :class => 'new_user') do |f| %>
-     <center><h2 class="form-signin-heading">Please sign in</h2></center>
-     <input type="text" name="mail" class="input-block-level" id="mail" placeholder="Email address">
-     <input type="password" name="password" id="password" class="input-block-level" placeholder="Password">
+     <center><h2 class="form-signin-heading">Por favor, identif&iacute;quese</h2></center>
+     <input type="text" name="mail" class="input-block-level" id="mail" placeholder="Email">
+     <input type="password" name="password" id="password" class="input-block-level" placeholder="Contrase&ntilde;a">
 	 <center>
 <% if flash[:error] %>
         <p id="warning"><%= flash[:error] %></p>
-<% end %><%= f.submit "Login" , :name => "commit", :class => "btn btn-large btn-primary" %><%= f.submit "Sign Up" , :name => "commit", :class => "btn btn-large btn-primary" %></center>
+<% end %><%= f.submit "Login" , :name => "commit", :class => "btn btn-large btn-primary" %><%= f.submit "Registrarse" , :name => "commit", :class => "btn btn-large btn-primary" %></center>
  	 <% end %>
     </div>
 <% else %>

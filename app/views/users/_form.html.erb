@@ -1,6 +1,6 @@
   <center><% if @user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2><%= pluralize(@user.errors.count, "error") %> evit&oactue; a este usuario ser guardado.</h2>
 
       <ul>
       <% @user.errors.full_messages.each do |msg| %>
@@ -12,15 +12,15 @@
 <%= form_for(@user) do |f| %>
   <center>
   <div class="field">
-    <%= f.text_field :mail, :class=>'input-block-level', :placeholder=>'Email Address'%>
+    <%= f.text_field :mail, :class=>'input-block-level', :placeholder=>'Email'%>
   </div>
   <div class="field">
-    <%= f.password_field :password, :class=>'input-block-level', :placeholder=>'Password'%>
+    <%= f.password_field :password, :class=>'input-block-level', :placeholder=>'Contraseña'%>
   </div>
   <div class="field">
-	<%= f.password_field :password_confirmation, :class=>'input-block-level', :placeholder=>'Password Confirmation'%>
+	<%= f.password_field :password_confirmation, :class=>'input-block-level', :placeholder=>'Confirmación de contraseña'%>
   </div>
   <div class="actions">
-    <%= f.submit 'Sign Up', :class => 'btn btn-large btn-primary' %></center>
+    <%= f.submit 'Registrarse', :class => 'btn btn-large btn-primary' %></center>
   </div>
 <% end %>

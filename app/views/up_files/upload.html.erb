@@ -1,11 +1,11 @@
 <center><% if @up_file.upload_file_file_size %>
 
-	<h1>A file has already been uploaded!</h1>
-	<p>Please contact <%= @up_file.event.user.mail %> for help </p>
+	<h1>&iexcl;Su archivo ya ha sido subido!</h1>
+	<p>Por favor contacte a <%= @up_file.event.user.mail %> para ayuda.</p>
 
 <% else %>
 
-	<h1 id="new_event_heading" class="form-signin-heading">Upload you file</h1>
+	<h1 id="new_event_heading" class="form-signin-heading">Suba su archivo</h1>
 	
 	<%= form_for @up_file, :html => { :multipart => true } do |f| %>
 	

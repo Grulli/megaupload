@@ -1,6 +1,6 @@
 <center><% if @event.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+      <h2><%= pluralize(@event.errors.count, "error") %> evit&oacute; el guardado de este evento:</h2>
 
       <ul>
       <% @event.errors.full_messages.each do |msg| %>
@@ -11,21 +11,21 @@
   <% end %></center>
 <%= form_for(@event, :html => { :class => "create_new_event"} ) do |f| %>
   <center><div class="field">
-    <%= f.text_field :name, :class=>'input-block-level', :placeholder=>'Event Name'%>
+    <%= f.text_field :name, :class=>'input-block-level', :placeholder=>'Nombre de Evento'%>
   </div>
   <div class="field">
-    <%= f.label :end_date %><br />
+    <%= f.label 'Fecha Final' %><br />
     <%= f.datetime_select :end_date, :start_year =>  Time.now.year %>
   </div>
   <div class="field">
-    <%= f.label :file_type %><br />
+    <%= f.label "Tipo de Archivo" %><br />
     <%= f.text_field :file_type %>
   </div>
 <div class="field">
-    <textarea class="input-block-level" cols="40" id="guest-text-box" name="event[guest_list]" placeholder="Guests (Separated by ;)" rows="5"></textarea>
+    <textarea class="input-block-level" cols="40" id="guest-text-box" name="event[guest_list]" placeholder="Invitados (Separados por ;)" rows="5"></textarea>
   </div>
   <div class="actions">
-    <%= f.submit 'Create Event', :class => 'btn btn-large btn-primary' %>
+    <%= f.submit 'Crear Evento', :class => 'btn btn-large btn-primary' %>
   </div></center>
 <% end %>
 
